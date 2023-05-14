@@ -1,0 +1,50 @@
+@use '../styles.scss' as *;
+
+.events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    row-gap: 45px;
+    background: linear-gradient(100.14deg, #F5F4F2 0%, rgba(245, 244, 242, 0.9) 100%);    margin: 0 auto;
+    padding-inline: 30px;
+
+    .event-card {
+        flex: 1 1 320px;
+        max-width: 570px;
+        margin-inline: auto;
+        border-radius: 8px;
+        overflow: hidden;
+
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        h2 {
+            margin: 0;
+            margin-top: 30px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: $font2;
+            color: $color-primary;
+            text-transform: uppercase;
+
+            @include breakpoints(sm){
+                text-align: left;
+            }
+        }
+
+        p {
+            margin: 0.5rem 0;
+            font-size: 1.125rem;
+            color: #0d0d0d;
+
+            @include breakpoints(sm) {
+                text-align: left;
+            }
+        }
+    }
+}

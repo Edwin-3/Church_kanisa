@@ -1,0 +1,49 @@
+@use './styles.scss' as *;
+
+
+.nav-bar {
+    inline-size: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    gap:2rem;
+    align-items: center;
+    inset-block-start: 0rem;
+    z-index: 999;
+
+    a{
+        color: $text-color2 ;
+    }
+
+    h2 {
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        white-space: nowrap;
+        margin-left: 50px;
+        @include breakpoints(md){
+            margin-left: 15px;
+        } 
+
+        @include breakpoints(sm){
+            margin-left: 15px;
+        }    
+    }
+
+    nav {
+        display: flex;
+        gap: 3rem;
+        margin-right: 50px;
+        white-space: nowrap;
+
+        @include breakpoints(md){
+            margin-left: 30px;
+            gap: 1rem;
+        } 
+
+        @include breakpoints(sm) {
+            display: none;
+        }
+    }
+}

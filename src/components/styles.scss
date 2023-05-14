@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+$color-primary: #764C36;
+$color-white: #FDFCFA;
+$text-color1: #140D09;
+$text-color2: #333333 ;
+/*  Fonts  */
+$font1: 'Cormorant Garamond', serif;
+$font2: 'Source Sans Pro', sans-serif;
+
+/* Breakpoint Variables */
+$breakpoint-sm: 700px;
+$breakpoint-md: 1024px;
+$breakpoint-lg: 1440px;
+
+
+/* Media queries */
+@mixin breakpoints($point) {
+    @if $point ==sm {
+        @media (max-width: $breakpoint-sm) {
+            @content;
+        }
+    }
+
+    @else if $point ==md {
+        @media (max-width: $breakpoint-md) {
+            @content;
+        }
+    }
+
+    @else if $point ==lg {
+        @media (max-width: $breakpoint-lg) {
+            @content;
+        }
+    }
+}
+
+/*  GENERAL STYLES  */
+a{
+    text-decoration: none;
+    color: $color-white;
+    font-family: $font2;
+    letter-spacing: 0.09em;
+
+}
+
+.btn{
+    width:max-content;
+    display: inline-block;
+    color: $color-white;
+    background-color: $color-primary;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-size: 0.875rem;
+    font-weight: 700;
+    border: none;
+}
+
+p{
+    margin: 0;
+    letter-spacing: 0.03em;
+
+}
+
+.container{
+    padding-block: 100px;
+}

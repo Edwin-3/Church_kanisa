@@ -10,7 +10,10 @@ const Navbar = () => {
     <nav>
         <a href='/sundays' >SUNDAYS</a>
         <a href='/#steps'>NEXT STEPS</a>
-        
+        <a href='#groups'>JOIN GROUP</a>
+        <a href='#about'>ABOUT</a>
+        <a href='#serve'>SERVE</a>
+        <a href='#contact'>CONTACT</a>
     </nav>
 </div>
   )

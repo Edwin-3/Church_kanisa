@@ -1,0 +1,93 @@
+@use '../styles.scss' as *;
+
+.section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+.disk-loop {
+    width: 67%;
+    margin-left: -13%;
+
+    .disk-container {
+        width: 930px;
+        height: 930px;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 50%;
+        position: relative;
+        background-image: url('../../assets/mountainsbg.jpg');
+        background-size: cover;
+        background-position: center;
+        display: grid;
+        place-items: center;
+
+
+        .inner-content {
+            width: 510px;
+            height: 510px;
+            background-color: $color-white;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+
+
+            .text {
+                width: 369px;
+                height: 369px;
+                border-radius: 50%;
+                border: 1px dashed cadetblue;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+
+                svg {
+                    font-size: 60px;
+                    color: $color-primary;
+                }
+
+                h4 {
+                    font-size: 48px;
+                    font-family: $font1;
+                    font-weight: 400;
+                    margin: 0;
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+.col-content {
+    width: 37%;
+    text-align: left;
+
+
+    .header {
+        text-align: left;
+
+        h2 {
+            font-size: 3rem;
+            font-family: $font1;
+            font-weight: 300;
+            color: $color-primary;
+            margin: 0;
+        }
+        p {
+            text-align: left;
+            font-family: $font2;
+            font-size: 18px;
+            color: $text-color1;
+            line-height: 1.5;
+            margin-block: 15px;
+        }
+
+        button{
+            margin-top: 30px;
+        }
+    }
+}
